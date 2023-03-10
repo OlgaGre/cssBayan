@@ -8,9 +8,7 @@ section {
   width: 100%;
 }
 
-.plus {
-  height: 20px;
-}
+
 
 .mem {
   display: block;
@@ -18,7 +16,7 @@ section {
   margin: 0 auto;
 }
 
-body {
+main {
   width: 70%;
   margin: 0 auto;
 }
@@ -26,7 +24,9 @@ body {
 section {
   display: none;
 }
-
+input{
+  width: 0;
+}
 label {
   display: flex;
   justify-content: space-between;
@@ -36,12 +36,22 @@ input:checked~section {
   display: block;
   animation: width 2s ;
 }
+.wrapper:hover section{
+  display: block;
+  animation: width 2s ;
+}
+
+body:hover .plus{
+  height: 100%;
+}
 
 input:checked~label .plus {
   animation: rotation 2s;
   transform: rotate(20deg);
 }
-
+.wrapper{
+  border-top: 1px black solid;
+}
 
 @keyframes rotation {
   from {
