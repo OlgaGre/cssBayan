@@ -1,30 +1,64 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-section{
+
+section {
   width: 100%;
 }
-.plus{
+
+.plus {
   height: 20px;
 }
-.mem{
+
+.mem {
   display: block;
   width: 70%;
   margin: 0 auto;
 }
-body{
+
+body {
   width: 70%;
   margin: 0 auto;
 }
-section{
+
+section {
   display: none;
 }
-label{
+
+label {
   display: flex;
   justify-content: space-between;
 }
-input:checked  ~  section{
+
+input:checked~section {
   display: block;
+  animation: width 2s ;
+}
+
+input:checked~label .plus {
+  animation: rotation 2s;
+  transform: rotate(20deg);
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes width {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%;
+  }
 }
