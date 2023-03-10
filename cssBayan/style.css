@@ -41,7 +41,7 @@ input:checked~section {
   animation: width 2s ;
 }
 
-body:hover .plus{
+main:hover .plus{
   height: 100%;
 }
 
