@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  width: 100%;
+}
+.plus{
+  height: 20px;
+}
+.mem{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+body{
+  width: 70%;
+  margin: 0 auto;
+}
+section{
+  display: none;
+}
+label{
+  display: flex;
+  justify-content: space-between;
+}
+input:checked  ~  section{
+  display: block;
+}
